@@ -1,5 +1,5 @@
 import random
-def guess_the_number():
+def gue():
     men = 0
     mat = 1000
     randmoit = random.randint(men, mat)
@@ -10,10 +10,12 @@ def guess_the_number():
             chos = int(input("Ваша спроба: "))
             popitka += 1
             if chos < randmoit:
-                print("Ви вибрали число яке менше яке випало")
+                print("Ви вибрали число яке менше чим випало")
             elif chos > randmoit:
-                print("Ви вибрали число яке більше яке випало")
+                print("Ви вибрали число яке більше чим випало")
             else:
                 print(f"Ви вгадали число яке випало: {randmoit}, за: {popitka} попиток")
                 break
 
+if __name__ == "__main__":
+    gue()
